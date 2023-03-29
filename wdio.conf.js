@@ -1,5 +1,3 @@
-const {join} = require ('path')
-
 exports.config = {
     hostname: 'localhost',
     port: 4723,
@@ -13,7 +11,10 @@ exports.config = {
         "platformVersion": "9.0",
         "deviceName": "aula_17",
         "automationName": "UiAutomator2",
-        "app": join(process.cwd(), './app/android/loja-ebac.apk'),
-        "appWaitActivity": 'com.woocommerce.android.ui.login.LoginActivity'                         
+        "app": "C:\Users\isaac\Desktop\EBAC\Exercícios\M17\testes-mobile-ebac-shop\app\android\loja-ebac.apk",
+        "appPackage": "com.woocommerce.android",
+        "appActivity": ".ui.main.MainActivity",
+        "appWaitActivity": ".ui.login.LoginActivity"
     }]
+
 }
