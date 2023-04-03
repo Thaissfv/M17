@@ -1,4 +1,4 @@
-const homeScreen = require ("../screens/home.screen");
+const homeScreen = require ('../screens/home.screen');
 
 
 describe ('Acessar o painel de administrador', ()=>{
