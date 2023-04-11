@@ -8,7 +8,7 @@ exports.config = {
         './test/specs/**/*.js',
     ],
     framework: 'mocha',
-    //services: ['appium'],
+    services: ['appium'],
     capabilities: [{
         'platformName': 'Android',
         'platformVersion': '11',
