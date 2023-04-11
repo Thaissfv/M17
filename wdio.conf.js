@@ -1,4 +1,5 @@
 const { join } = require('path')
+const allure = require('allure-commandline')
 
 exports.config = {
     hostname: 'localhost',
@@ -19,6 +20,9 @@ exports.config = {
         'appActivity': 'com.woocommerce.android.ui.main.MainActivity',
         'appWaitActivity': 'com.woocommerce.android.ui.login.LoginActivity'
     }],
-    maxInstances: 1
-
+    maxInstances: 1,
+    waitForTimeout: 20000,
+    mochaOpts: {
+        timeout: 300000
+    }
 }
