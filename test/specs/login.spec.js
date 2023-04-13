@@ -1,6 +1,6 @@
 const homeScreen = require ('../screens/home.screen');
 const loginScreen = require('../screens/login.screen');
-const loginScreeb = require("../screens/login.screen");
+const loginScreen = require("../screens/login.screen");
 
 let urlLoja = 'http://lojaebac.ebaconline.art.br/'
 let usuario = 'gerente'
@@ -12,6 +12,7 @@ describe ('Acessar o painel de administrador', ()=>{
         await homeScreen.goToLogin()
         await loginScreen.setStoreAddress(urlLoja)
         await loginScreen.continue()
+        //await loginScreen.continueWithStoreCreds()
         await loginScreen.login(usuario, senha)
         await loginScreen.goToTwoFactorAuth()
         await loginScreen.twoFactorLogin(senha)
